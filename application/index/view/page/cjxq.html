@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成绩详情</title>
+		<link rel="stylesheet" href="/layui/css/layui.css" media="all">
+	</head>
+	<body>
+		{include file="public/header" /}
+		<link rel="stylesheet" type="text/css" href="/index/css/cjxq.css">
+		<div class="content-img">
+			<div class="cjcxlogo"></div>
+			<div class="cjcxnr">
+
+
+				<table id="demo" lay-filter="test"></table>
+
+
+
+				<script src="/layui/layui.js"></script>
+
+				<script>
+					layui.use('table', function(){
+					  var table = layui.table; 
+					  //第一个实例
+					  table.render({
+						elem: '#demo'
+						,limit:'10'
+						,limits:[5,10,15,20]
+						,height: ''
+						,url: '/index.php/index/page/cjxqlist' //数据接口
+						,page: true //开启分页
+						,cols: [[ //表头
+						  {field: 'username', title: '用户名', width:"13.8%", fixed: 'left'}
+						  ,{field: 'number', title: '学号', width:"20.8%", sort: true}
+						  ,{field: 'start_time', title: '开始时间', width:"28.5%"} 
+						  ,{field: 'end_time', title: '结束时间', width: "25.8%"} 
+						  ,{field: 'mark',title:"分数",sort:true}
+						]]
+					  });
+					  
+					});
+				</script>
+
+
+
+
+
+
+
+				 
+			</div>
+			
+		</div>
+			
+		{include file="public/footer" /}
+	</body>
+</html>
