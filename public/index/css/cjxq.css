@@ -1,0 +1,51 @@
+body{
+	height: 100vh;
+	min-height: 15.00rem;
+	background: url(../img/45.jpg);
+	background-size: 100% 100%;
+}
+.cjxqhref{
+	color: #4884a8 !important;
+  }
+.content-img{
+	width: 11.79rem;
+	height:10.46rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url(../img/syylnrbg.png);
+	background-size: 100% 100%;
+}
+.cjcxlogo{
+	width: 1.95rem;
+	height: 0.39rem;
+	margin-top: 0.35rem;
+	margin-bottom: 0.35rem;
+	background: url(../img/cjxq.png);
+	background-size: 100% 100%;
+}
+.cjcxnr{
+	width: 9.05rem;
+	border:0.2rem solid white;
+}
+.layui-table td, .layui-table th {
+   	position: relative;
+   	padding:0;
+	height: 0.4rem;
+	text-align: center;
+	line-height: 0.4rem;
+}
+.layui-table th{
+	font-size: 0.17rem;
+	color: aliceblue;
+	background-color: #406ebb;
+	font-weight: bold;
+}
+.layui-table td{
+	font-size: 0.12rem;
+	border:0.01rem solid #e4e4e4;
+}
+.layui-table, .layui-table-view {
+    margin:0;
+}
+.layui-table-page {background: #eeeeee;}

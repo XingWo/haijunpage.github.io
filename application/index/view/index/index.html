@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>海军首页</title>
+</head>
+
+<body>
+    {include file="public/header" /}
+	<link rel="stylesheet" type="text/css" href="/index/css/index.css">
+	<div class="home-page">
+		<div class="title">
+			<div class="title-p">
+				<p>“四史教育”之中国海军走向深海虚拟仿真实验 {$a}</p>
+			</div>
+		</div>
+		<div class="content-img">
+			<div class="content">
+				<div class="content-left">
+					<div class="content-left-nr1">
+						<p>所属分类：<span>马克思主义理论学</span></p>
+						<p>实验学时：<span>8学时</span></p>
+					</div>
+					<div class="content-left-nr1">
+						<p>实验项目负责人：<span>{$realname}</span></p>
+						<p>实验步骤：<span>33步</span></p>
+					</div>
+					<div class="content-left-nr1">
+						<p>联系电话：<span>1451646811</span></p>
+					</div>
+					<div class="content-left-nr1">
+						<p>实验简介：</p>
+					</div>
+					<div class="content-left-nr2">
+						<p>本项目拟构建中国海军走向深蓝虚拟仿真平台，将虚拟实践教学引入思想政治理论课（以下简称“思政课”）“四史”教育，体现沈阳理工大学作为军工院校思政教学的国防特色，提升学生对思想政治理论的学习兴趣，促进新媒体时代思政课教育教学的改革创新，提高思政课教学的实效性。提升学生对思想政治理论的学习兴趣，促进新媒体时代思政课教育教学的改革创新，提高思政课教学的实效性。提升学生对思想政治理论的学习兴趣，促进新媒体时代思政课教育教学的改革创新，提高思政课教学的实效性。
+						</p>
+					</div>
+					<div class="content-left-nr1">
+						<div id="content-left-btn"><a>开始实验</a></div>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="content-right-btns">
+						<div class="content-right-btn" id="btns0"><a onclick="btn(0)">项目简介</a></div>
+						<div class="content-right-btn content-right-btnx" id="btns1"><a onclick="btn(1)">项目引导</a></div>
+					</div>
+					<div class="video video0">
+						<div class="video-open" id="readyturn0">
+							<a class="readyturn"></a>
+						</div>
+					</div>
+					<div class="video video1">
+						<div class="video-open" id="readyturn1">
+							<a class="readyturn"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    {include file="public/footer" /}
+	<script>
+		$(function () {
+			$("#readyturn0").click(function () {
+				layer.msg('暂无视频源');
+			})
+		})
+		$(function () {
+			$("#readyturn1").click(function () {
+				layer.msg('此处同无视频源');
+			})
+		})
+		$(function () {
+			$("#content-left-btn").click(function () {
+				layer.msg('视频无源');
+			})
+		})
+		function btn(num) {
+			if (num == 0) {
+				xnum = 1;
+			}
+			if (num == 1) {
+				xnum = 0;
+			}
+			$(".video" + xnum).hide();
+			$(".video" + num).show();
+			$("#btns" + xnum).addClass("content-right-btnx");
+			$("#btns" + num).removeClass("content-right-btnx");
+		}
+	</script>
+</body>
+
+</html>

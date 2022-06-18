@@ -1,0 +1,40 @@
+body{
+	height: 100vh;
+	min-height: 15.60rem;
+	background: url(../img/syylbackground.jpg);
+	background-size: 100% 100%;
+}
+.xmtshref{
+	color: #4884a8 !important;
+  }
+.content-img{
+	width: 11.79rem;
+	height: 11.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	background: url(../img/syylnrbg.png);
+	background-size: 100% 100%;
+}
+.xmtslogo{
+	width: 2.26rem;
+	height: 0.39rem;
+	margin-top: 0.35rem;
+	background: url(../img/xmts.png);
+	background-size: 100% 100%;
+}
+.xmtsnr{
+	width: 10.15rem;
+}
+.xmtsnr p{
+	margin-top: 0.35rem;
+	font-size: 0.17rem;
+	letter-spacing: 0.03rem;
+}
+#title{
+	text-indent:2em;
+}
+#nrs{
+	margin-top: 0.17rem;
+}
